@@ -24,17 +24,17 @@
     <br><br><br><br>
 
     <label for="cargo">Qual é o cargo desejado: </label>
-    <input type="text" id="valorCargo">
-    <button onclick="salario()">enter</button>
-
-    <p>
+    <select id="valorCargo">
         suas opções são:<br>
-        Junior<br>
-        Pleno<br>
-        Senior<br>
-        TechLead<br>
-        Diretor<br>
-    </p>
+        <option value="junior">Junior</option><br>
+        <option value="pleno">Pleno</option><br>
+        <option value="senior">Senior</option><br>
+        <option value="techLead">TechLead</option><br>
+        <option value="diretor">Diretor</option><br>
+    </select>
+    <button onclick="calc()">enter</button>
+
+    <h1 id="resultado">o salario eh de: </h1>
 
     <script src="js/index.js"></script>
 </body>
